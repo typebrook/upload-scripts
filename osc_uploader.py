@@ -242,8 +242,8 @@ class PhotoUploadOperation:
                                            self.sequence_id,
                                            osc_photo,
                                            photo.path,
-                                           photo.fov,
-                                           projection)
+                                           "360",
+                                           "SPHERE")
             if uploaded:
                 break
             LOGGER.debug("Will request upload %s", photo.path)
